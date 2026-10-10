@@ -31,4 +31,7 @@ if (/<script\b[^>]*\bsrc=/.test(markup) || /<link\b[^>]*\brel="stylesheet"/.test
 }
 const filename = join(output, 'sxwnl-modern.html');
 await writeFile(filename, markup, 'utf8');
+// 我让下载版和 Pages 首页都来自同一次打包，避免旧 importmap 产物残留 CSS 导入。
+await writeFile(resolve('sxwnl-modern.html'), markup, 'utf8');
+await writeFile(resolve('docs/index.html'), markup.replace('<title>寿星天文历 · 观天知时</title>', '<title>PCalendar · 国际日历与天文计算</title>'), 'utf8');
 console.log(`离线单文件：dist/${basename(filename)}（${(Buffer.byteLength(markup) / 1024).toFixed(0)} KiB）`);

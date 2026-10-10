@@ -266,4 +266,6 @@ const riseSet = getSunMoon(day.d0 + 2451545, 121.4737, 31.2304, 8);
 
 ## GitHub Pages 首页
 
+运行 `npm run build` 会同时生成 `dist/`、根目录 `sxwnl-modern.html` 和 `docs/index.html`，避免手动复制旧产物。
+
 `docs/index.html` 是 v1.4.0 的完整离线单页，脚本与样式内联，可作为网站首页。打开仓库 Settings → Pages，将 Source 设置为 Deploy from a branch，Branch 选择 main，目录选择 /docs，保存后访问 https://uirmb.github.io/PCalendar/ 。
