@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-10-06T16:26:47.815Z",
+  "version": "1.2.0",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": null,
+  "scope": "国际地区、CN/US节日、现代IANA、显示隔离、专业动作恢复、桌面和手机",
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "name": "CN initial profile and selected US New York link the clock, coordinates, calendar date and regional display preferences",
+      "passed": true,
+      "milliseconds": 2156
+    },
+    {
+      "name": "US actual and observed holidays, Thanksgiving, Christmas and cultural Halloween are classified visibly",
+      "passed": true,
+      "milliseconds": 2088
+    },
+    {
+      "name": "US hover, accessible day labels and copied date have no Chinese calendar residual",
+      "passed": true,
+      "milliseconds": 2093
+    },
+    {
+      "name": "switching CN restores lunar detail and official 2026 rest-work labels; switching US clears them",
+      "passed": true,
+      "milliseconds": 1611
+    },
+    {
+      "name": "a country without holiday data states coverage explicitly and retains local astronomical data",
+      "passed": true,
+      "milliseconds": 402
+    },
+    {
+      "name": "modern New York DST changes on March 8 and November 1 and persisted settings remain coherent",
+      "passed": true,
+      "milliseconds": 4969
+    },
+    {
+      "name": "CN page-eight action is restored after international lunar-only mode and manual year is retained",
+      "passed": true,
+      "milliseconds": 7107
+    },
+    {
+      "name": "theme and explicit display preferences do not recompute professional results",
+      "passed": true,
+      "milliseconds": 822
+    },
+    {
+      "name": "manual historical date and professional input remain selected after switching countries",
+      "passed": true,
+      "milliseconds": 1397
+    },
+    {
+      "name": "mobile international settings and calendar fit the viewport and country changes remain usable",
+      "passed": true,
+      "milliseconds": 3821
+    },
+    {
+      "name": "no uncaught exceptions or failed resources in international interactions",
+      "passed": true,
+      "milliseconds": 1
+    },
+    {
+      "name": "legacy region and unknown custom-location migration produce coherent visible country and coordinates",
+      "passed": true,
+      "milliseconds": 2480
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "verification": "Merged actual executions: 11 initial groups, migration plus errors, then text-label targets plus errors. No full twelve-group rerun was performed after the final wording-only build.",
+  "runs": [
+    {
+      "stage": "Initial full eleven-group execution before adding migration scenario",
+      "filter": null,
+      "passed": 11,
+      "failed": 0,
+      "testNames": [
+        "CN initial profile and selected US New York link the clock, coordinates, calendar date and regional display preferences",
+        "US actual and observed holidays, Thanksgiving, Christmas and cultural Halloween are classified visibly",
+        "US hover, accessible day labels and copied date have no Chinese calendar residual",
+        "switching CN restores lunar detail and official 2026 rest-work labels; switching US clears them",
+        "a country without holiday data states coverage explicitly and retains local astronomical data",
+        "modern New York DST changes on March 8 and November 1 and persisted settings remain coherent",
+        "CN page-eight action is restored after international lunar-only mode and manual year is retained",
+        "theme and explicit display preferences do not recompute professional results",
+        "manual historical date and professional input remain selected after switching countries",
+        "mobile international settings and calendar fit the viewport and country changes remain usable",
+        "no uncaught exceptions or failed resources in international interactions"
+      ]
+    },
+    {
+      "timestamp": "2026-10-06T16:25:21.833Z",
+      "filter": "legacy region|no uncaught",
+      "passed": 2,
+      "failed": 0,
+      "testNames": [
+        "legacy region and unknown custom-location migration produce coherent visible country and coordinates",
+        "no uncaught exceptions or failed resources in international interactions"
+      ]
+    },
+    {
+      "timestamp": "2026-10-06T16:26:47.815Z",
+      "filter": "US hover|country without|no uncaught",
+      "passed": 3,
+      "failed": 0,
+      "testNames": [
+        "US hover, accessible day labels and copied date have no Chinese calendar residual",
+        "a country without holiday data states coverage explicitly and retains local astronomical data",
+        "no uncaught exceptions or failed resources in international interactions"
+      ]
+    }
+  ]
+}

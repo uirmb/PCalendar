@@ -1,0 +1,73 @@
+.year-workspace { display: grid; gap: 1.35rem; color: var(--text); }
+.year-heading, .year-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.year-heading h1 { margin: .25rem 0; font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.055em; line-height: 1.1; }
+.year-heading h1 > span { font-size: 1rem; font-weight: 500; margin-left: .7rem; letter-spacing: 0; color: var(--muted); }
+.year-heading p, .year-section-heading p { margin: .5rem 0 0; color: var(--muted); font-size: .85rem; }
+.year-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: .4rem; }
+.year-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .9rem; }
+.year-summary-item { text-align: left; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); padding: 1rem 1.15rem; display: grid; gap: .25rem; cursor: pointer; }
+.year-summary-item > span { font-size: .85rem; color: var(--muted); }
+.year-summary-item > strong { font-size: 1.8rem; font-weight: 650; color: var(--year-kind-color); }
+.year-summary-item > small { color: var(--muted); font-size: .72rem; }
+.year-summary-item.is-active { border-color: var(--year-kind-color); box-shadow: inset 0 0 0 1px var(--year-kind-color); }
+.year-kind-national { --year-kind-color: #a45c08; }
+.year-kind-local { --year-kind-color: #168173; }
+.year-kind-astronomy { --year-kind-color: #8257dc; }
+.year-filters { display: flex; align-items: center; flex-wrap: wrap; gap: .45rem; }
+.year-filters .is-active { color: var(--accent); border-color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+.year-filters > span { font-size: .75rem; color: var(--muted); margin-left: .5rem; }
+.year-coverage-notices { display: grid; gap: .5rem; }
+.year-coverage-notice { margin: 0; border: 1px solid color-mix(in srgb, #b8893a 42%, var(--border)); border-radius: .8rem; padding: .8rem 1rem; background: color-mix(in srgb, #e4b451 8%, var(--surface)); font-size: .8rem; line-height: 1.6; }
+.year-coverage-notice strong { display: block; }
+.year-coverage-notice span { color: var(--muted); }
+.year-month-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.year-month { min-width: 0; padding: 1rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
+.year-month-title { display: flex; align-items: center; justify-content: space-between; width: 100%; border: 0; background: none; color: var(--text); text-align: left; padding: .1rem .25rem .9rem; cursor: pointer; }
+.year-month-title strong { font-size: 1.3rem; }
+.year-month-title strong small { font-size: .8rem; margin-left: .3rem; font-weight: 500; color: var(--muted); }
+.year-month-title > span { display: flex; align-items: center; gap: .25rem; font-size: .7rem; color: var(--muted); }
+.year-month-title .icon { width: 14px; height: 14px; }
+.year-weekdays, .year-month-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); text-align: center; }
+.year-weekdays { padding-bottom: .35rem; color: var(--muted); font-size: .7rem; }
+.year-weekdays span { padding: .3rem 0; }
+.year-month-days { gap: .12rem; }
+.year-day, .year-day-empty { height: 2.3rem; min-width: 0; }
+.year-day { display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid transparent; border-radius: .6rem; background: transparent; color: var(--text); cursor: pointer; font-size: .8rem; font-variant-numeric: tabular-nums; }
+.year-day.is-weekend { color: var(--muted); }
+.year-day:hover { background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+.year-day.is-selected { border-color: var(--accent); }
+.year-day.is-today { background: var(--accent); color: white; }
+.year-day-dots { display: flex; gap: 2px; height: 5px; align-items: flex-end; }
+.year-day-dots i { display: block; width: 3px; height: 3px; border-radius: 50%; background: var(--year-kind-color); }
+.year-day.is-today .year-day-dots i { background: white; }
+.year-overview { padding-top: .45rem; }
+.year-section-heading h2 { margin: 0; font-size: 1.15rem; }
+.year-event-months { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: .75rem; margin-top: 1rem; }
+.year-event-month { border: 1px solid var(--border); border-radius: .9rem; background: var(--surface); min-width: 0; overflow: hidden; }
+.year-event-month > summary { display: flex; align-items: center; justify-content: space-between; padding: .9rem 1rem; cursor: pointer; list-style: none; }
+.year-event-month > summary::-webkit-details-marker { display: none; }
+.year-event-month > summary > strong { font-size: .9rem; }
+.year-event-month > summary > span { display: flex; align-items: center; gap: .4rem; font-size: .72rem; color: var(--muted); }
+.year-event-month > summary .icon { width: 14px; height: 14px; transition: transform .15s; }
+.year-event-month[open] > summary .icon { transform: rotate(180deg); }
+.year-events { margin: 0; padding: 0 .85rem .5rem; list-style: none; }
+.year-event { border-top: 1px solid var(--border); padding: .3rem 0 .55rem; }
+.year-event-link { display: grid; grid-template-columns: 1fr auto; gap: .3rem .75rem; width: 100%; padding: .55rem .2rem .3rem; text-align: left; border: 0; background: none; color: var(--text); cursor: pointer; }
+.year-event-link:hover .year-event-name { color: var(--accent); }
+.year-event-date { grid-column: 1 / -1; color: var(--muted); font-size: .69rem; }
+.year-event-name { font-size: .8rem; font-weight: 550; line-height: 1.5; }
+.year-event-name small { display: block; color: var(--year-kind-color); font-weight: 400; font-size: .67rem; }
+.year-event-link time { font-size: .68rem; color: var(--muted); text-align: right; padding-top: .1rem; }
+.year-event-description { margin: .2rem .2rem 0; color: var(--muted); font-size: .7rem; line-height: 1.65; }
+.year-event-description summary { cursor: pointer; font-size: .66rem; }
+.year-event-description p { margin: .4rem 0; }
+.year-event-description a, .year-sources a { color: var(--accent); }
+.year-events-empty { padding: 0 1rem .75rem; color: var(--muted); font-size: .75rem; }
+.year-sources { padding: 1rem 1.15rem; border: 1px solid var(--border); border-radius: .9rem; background: var(--surface); color: var(--muted); font-size: .78rem; line-height: 1.8; }
+.year-sources > summary { color: var(--text); cursor: pointer; font-weight: 550; }
+.year-sources > div { margin-top: .8rem; padding-top: .8rem; border-top: 1px solid var(--border); }
+.year-sources p { margin: .45rem 0; }
+.year-history-note { font-size: .8rem; color: var(--muted); margin: 0; }
+.year-workspace button:focus-visible, .year-workspace summary:focus-visible, .year-workspace a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 1150px) { .year-month-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 680px) { .year-heading { align-items: flex-start; flex-direction: column; } .year-summary { gap: .5rem; } .year-summary-item { padding: .75rem; } .year-summary-item > span { font-size: .7rem; } .year-summary-item > strong { font-size: 1.5rem; } .year-summary-item > small { font-size: .62rem; } .year-month-grid, .year-event-months { grid-template-columns: 1fr; } .year-day, .year-day-empty { height: 2.7rem; } .year-filters > span { margin: .3rem 0 0; width: 100%; } }

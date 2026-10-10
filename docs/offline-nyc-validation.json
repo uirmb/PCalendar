@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-10-07T03:25:40.321Z",
+  "version": "1.3.0",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist/sxwnl-modern.html",
+  "transport": "file://",
+  "networkOffline": true,
+  "artifactBytes": 1388886,
+  "artifactSha256": "586eeb487caa06df243fffd56d96316740c773087fd701e37c3ebc133bb214b3",
+  "scope": "单文件离线 CN→纽约、学校与停车三类事项、圣诞节、公历年历、四季与月相、切回中国及零网络依赖",
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "standalone file opens offline with the original Chinese calendar default",
+      "passed": true,
+      "milliseconds": 9
+    },
+    {
+      "name": "offline CN to New York applies local civil date, jurisdiction and localized menus",
+      "passed": true,
+      "milliseconds": 2154
+    },
+    {
+      "name": "offline November 3 keeps election, remote school and ASP as three separately scoped events",
+      "passed": true,
+      "milliseconds": 920
+    },
+    {
+      "name": "offline reload persists local layers and December 25 stays an all-day Christmas event",
+      "passed": true,
+      "milliseconds": 4125
+    },
+    {
+      "name": "offline Gregorian year filters and date links remain interactive",
+      "passed": true,
+      "milliseconds": 955
+    },
+    {
+      "name": "offline US seasons coexist with moon phases and restore their last action",
+      "passed": true,
+      "milliseconds": 1770
+    },
+    {
+      "name": "offline switch back to China restores lunar year, traditional calculation and lunar month details",
+      "passed": true,
+      "milliseconds": 1188
+    },
+    {
+      "name": "all standalone interactions make zero HTTP or WebSocket requests and have no page errors",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "pageErrors": [],
+  "httpOrWebSocketRequests": [],
+  "failedRequests": [],
+  "requests": [
+    {
+      "url": "file:///workspace/scratch/23f575ee5f73/sxwnl-modern/dist/sxwnl-modern.html",
+      "resourceType": "document"
+    },
+    {
+      "url": "file:///workspace/scratch/23f575ee5f73/sxwnl-modern/dist/sxwnl-modern.html",
+      "resourceType": "document"
+    }
+  ]
+}

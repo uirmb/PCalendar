@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-06T15:32:45.744Z",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": "ancient calendar|DST-day rise|no uncaught",
+  "scope": "统一地点与时间、日期跟随、专业页刷新、UTC8与跨月显示、桌面和手机",
+  "passed": 3,
+  "failed": 0,
+  "results": [
+    {
+      "name": "ancient calendar terms remain in the day grid, details and copied summary",
+      "passed": true,
+      "milliseconds": 2536
+    },
+    {
+      "name": "DST-day rise and set captions describe regional time without one misleading daily offset",
+      "passed": true,
+      "milliseconds": 662
+    },
+    {
+      "name": "no uncaught exceptions or failed resources in unified-time interactions",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": []
+}

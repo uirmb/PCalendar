@@ -1,0 +1,162 @@
+{
+  "timestamp": "2026-10-06T14:10:11.355Z",
+  "browser": "Chromium",
+  "build": "dist",
+  "passed": 21,
+  "failed": 0,
+  "results": [
+    {
+      "name": "desktop startup and all fifteen navigation entries",
+      "passed": true,
+      "milliseconds": 3518,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "1582 missing dates and keyboard day/month navigation",
+      "passed": true,
+      "milliseconds": 418,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "2033 leap month, BCE year and invalid reform date",
+      "passed": true,
+      "milliseconds": 763,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "lunar new-year zodiac boundary and constellation label",
+      "passed": true,
+      "milliseconds": 332,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "mouse day preview, Control retention and click selection",
+      "passed": true,
+      "milliseconds": 2003,
+      "verifiedAt": "2026-10-06T14:10:11.355Z"
+    },
+    {
+      "name": "annual reports, both display modes and multi-year generation",
+      "passed": true,
+      "milliseconds": 346,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "ten ephemerides and all forty-five astronomical event buttons",
+      "passed": true,
+      "milliseconds": 4636,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "star library selection, editable catalog and three coordinate modes",
+      "passed": true,
+      "milliseconds": 995,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "four moon phases, arbitrary angle, solar terms and pentads",
+      "passed": true,
+      "milliseconds": 640,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "sun/moon daily rise/set and complete annual tables",
+      "passed": true,
+      "milliseconds": 330,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "sun/moon eclipses, phase stepping and realtime coordinate pause",
+      "passed": true,
+      "milliseconds": 2268,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "multi-location solar eclipse table and NASA radius switch",
+      "passed": true,
+      "milliseconds": 411,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "eclipse search, boundary table, all nine projections and moving shadow",
+      "passed": true,
+      "milliseconds": 3330,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "four pillars and true solar time",
+      "passed": true,
+      "milliseconds": 210,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "Julian tools, nine pi algorithms, diagnostics and validation messages",
+      "passed": true,
+      "milliseconds": 2224,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "all original help chapters and chapter-six interactive fitting",
+      "passed": true,
+      "milliseconds": 2019,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "standalone eclipse boundary map, zoom, coordinates and input validation",
+      "passed": true,
+      "milliseconds": 2386,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "settings persistence, dark theme, week start and world clock selection",
+      "passed": true,
+      "milliseconds": 926,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "same-coordinate city selection preserves Xiangcheng district",
+      "passed": true,
+      "milliseconds": 1171,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "mobile navigation and no page-level horizontal overflow",
+      "passed": true,
+      "milliseconds": 9477,
+      "verifiedAt": "2026-10-06T14:07:54.408Z"
+    },
+    {
+      "name": "no uncaught browser exceptions or failed asset requests",
+      "passed": true,
+      "milliseconds": 1,
+      "verifiedAt": "2026-10-06T14:10:11.355Z"
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "browserVersion": "153.0.8010.0",
+  "validationStrategy": "完整运行21组，20组通过；点击日期重绘后悬停再次出现的问题修复后，仅重测悬停/Ctrl/点击组及浏览器异常组，均通过。此报告合并各组实际运行记录，不表示修复后重新全量运行。",
+  "initialRun": {
+    "timestamp": "2026-10-06T14:07:54.408Z",
+    "passed": 20,
+    "failed": 1
+  },
+  "retests": [
+    {
+      "timestamp": "2026-10-06T14:10:11.355Z",
+      "report": "browser-hover-validation.json",
+      "correction": "点击日期后按日期key抑制重绘导致的新pointerover，移出该日期后恢复预览。",
+      "initialFailure": {
+        "name": "mouse day preview, Control retention and click selection",
+        "passed": false,
+        "milliseconds": 331,
+        "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\ntrue !== false\n\n    at tests/browser.smoke.mjs:143:12\n    at async check (tests/browser.smoke.mjs:38:9)\n    at async tests/browser.smoke.mjs:128:3"
+      },
+      "result": {
+        "name": "mouse day preview, Control retention and click selection",
+        "passed": true,
+        "milliseconds": 2003
+      }
+    }
+  ]
+}

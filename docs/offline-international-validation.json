@@ -1,0 +1,18 @@
+{
+  "version": "1.2.0",
+  "timestamp": "2026-10-06T16:26:13.888Z",
+  "browser": "153.0.8010.0",
+  "entry": "dist/sxwnl-modern.html",
+  "protocol": "file:",
+  "checks": [
+    "The standalone file initializes China and local time with all HTTP requests blocked",
+    "US selection synchronizes New York location, Eastern daylight time, calendar content and navigation offline",
+    "Christmas stays on the local December 25 date and US region preferences survive file reload",
+    "A fixed UTC-12 setting updates followed local today across the year boundary",
+    "Manual historical selection and the original October 1582 calendar survive a timezone change",
+    "China restoration returns lunar content, official rest markers and Chinese professional entry points"
+  ],
+  "pageErrors": [],
+  "httpRequests": [],
+  "passed": true
+}

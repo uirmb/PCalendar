@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-10-07T03:24:02.098Z",
+  "version": "1.3.0",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": null,
+  "scope": "国际地区、CN/US节日、现代IANA、显示隔离、专业动作恢复、桌面和手机",
+  "passed": 12,
+  "failed": 0,
+  "results": [
+    {
+      "name": "CN initial profile and selected US New York link the clock, coordinates, calendar date and regional display preferences",
+      "passed": true,
+      "milliseconds": 2479
+    },
+    {
+      "name": "US actual and observed holidays, Thanksgiving, Christmas and cultural Halloween are classified visibly",
+      "passed": true,
+      "milliseconds": 2605
+    },
+    {
+      "name": "US hover, accessible day labels and copied date have no Chinese calendar residual",
+      "passed": true,
+      "milliseconds": 1039
+    },
+    {
+      "name": "switching CN restores lunar detail and official 2026 rest-work labels; switching US clears them",
+      "passed": true,
+      "milliseconds": 2270
+    },
+    {
+      "name": "a country without holiday data states coverage explicitly and retains local astronomical data",
+      "passed": true,
+      "milliseconds": 718
+    },
+    {
+      "name": "modern New York DST changes on March 8 and November 1 and persisted settings remain coherent",
+      "passed": true,
+      "milliseconds": 5092
+    },
+    {
+      "name": "CN page-eight action is restored after international lunar-only mode and manual year is retained",
+      "passed": true,
+      "milliseconds": 7151
+    },
+    {
+      "name": "theme and explicit display preferences do not recompute professional results",
+      "passed": true,
+      "milliseconds": 796
+    },
+    {
+      "name": "manual historical date and professional input remain selected after switching countries",
+      "passed": true,
+      "milliseconds": 1601
+    },
+    {
+      "name": "legacy region and unknown custom-location migration produce coherent visible country and coordinates",
+      "passed": true,
+      "milliseconds": 3310
+    },
+    {
+      "name": "mobile international settings and calendar fit the viewport and country changes remain usable",
+      "passed": true,
+      "milliseconds": 1454
+    },
+    {
+      "name": "no uncaught exceptions or failed resources in international interactions",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": []
+}

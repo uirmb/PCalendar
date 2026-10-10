@@ -1,0 +1,65 @@
+.eclipse-map {
+  --eclipse-map-ocean: #f3f6fa;
+  --eclipse-map-grid: #e0e7ef;
+  --eclipse-map-coast: #8093aa;
+  --eclipse-map-country: #bdc9d6;
+  --eclipse-map-center: #df495f;
+  --eclipse-map-edge: #218765;
+  display: grid;
+  gap: 22px;
+  color: var(--text);
+}
+
+[data-theme="dark"] .eclipse-map {
+  --eclipse-map-ocean: #171e2b;
+  --eclipse-map-grid: #263245;
+  --eclipse-map-coast: #7c93b1;
+  --eclipse-map-country: #394b65;
+  --eclipse-map-center: #ff7181;
+  --eclipse-map-edge: #5ccea6;
+}
+
+.eclipse-map__form { padding: 22px 24px; }
+.eclipse-map__fields { display: flex; gap: 12px; flex-wrap: wrap; align-items: end; }
+.eclipse-map__field { display: grid; gap: 7px; font-size: 12px; font-weight: 600; }
+.eclipse-map__field .input { width: 142px; min-height: 42px; }
+.eclipse-map__field--small .input { width: 90px; }
+.eclipse-map__fields > .button { min-height: 42px; margin-left: 5px; }
+.eclipse-map__hint, .eclipse-map__notes { color: var(--muted); font-size: 12px; line-height: 1.8; }
+.eclipse-map__hint { margin: 12px 0 0; }
+.eclipse-map__error { margin: 12px 0 0; font-size: 13px; color: var(--eclipse-map-center); }
+.eclipse-map__map-card { overflow: hidden; padding: 0; }
+.eclipse-map__header { padding: 21px 24px; display: flex; gap: 16px; justify-content: space-between; align-items: center; }
+.eclipse-map__header h2 { font-size: 16px; font-weight: 650; margin: 0; }
+.eclipse-map__event { font-size: 12px; line-height: 1.7; margin: 6px 0 0; color: var(--muted); font-variant-numeric: tabular-nums; }
+.eclipse-map__zoom-controls { display: flex; align-items: center; gap: 7px; flex-shrink: 0; }
+.eclipse-map__zoom-controls .button { min-height: 35px; font-size: 12px; }
+.eclipse-map__zoom-controls .button--icon-only { min-width: 35px; width: 35px; padding: 0; font-size: 20px; }
+.eclipse-map__zoom { min-width: 44px; text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; color: var(--muted); }
+.eclipse-map__stage { height: clamp(400px, 52vw, 560px); position: relative; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: var(--eclipse-map-ocean); }
+.eclipse-map__canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+.eclipse-map__canvas.is-dragging { cursor: grabbing; }
+.eclipse-map__canvas:focus-visible { outline: 2px solid var(--eclipse-map-edge); outline-offset: -3px; }
+.eclipse-map__legend { position: absolute; top: 16px; right: 16px; display: grid; gap: 10px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); font-size: 11px; pointer-events: none; box-shadow: 0 4px 18px rgb(0 0 0 / 3%); }
+.eclipse-map__legend span { display: flex; align-items: center; gap: 9px; white-space: nowrap; }
+.eclipse-map__line-key { width: 23px; height: 0; display: inline-block; border-top: 2px solid var(--eclipse-map-edge); }
+.eclipse-map__line-key--center { border-color: var(--eclipse-map-center); }
+.eclipse-map__line-key--penumbra { border-top-style: dashed; }
+.eclipse-map__footer { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 14px 24px; color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.eclipse-map__selected { color: var(--text); }
+.eclipse-map__notes { padding: 0 3px; }
+.eclipse-map__notes p { margin: 0 0 4px; }
+
+@media (max-width: 680px) {
+  .eclipse-map { gap: 16px; }
+  .eclipse-map__form { padding: 18px; }
+  .eclipse-map__fields { gap: 9px; }
+  .eclipse-map__field .input { width: 115px; }
+  .eclipse-map__field--small .input { width: 73px; }
+  .eclipse-map__fields > .button { margin: 4px 0 0; width: 100%; }
+  .eclipse-map__header { padding: 17px 18px; align-items: flex-start; flex-direction: column; }
+  .eclipse-map__zoom-controls { width: 100%; }
+  .eclipse-map__zoom-controls [data-map-action="reset"] { margin-left: auto; }
+  .eclipse-map__legend { top: 10px; right: 10px; padding: 11px 12px; gap: 8px; font-size: 10px; }
+  .eclipse-map__footer { padding: 13px 18px; flex-direction: column; align-items: flex-start; gap: 5px; font-size: 11px; }
+}

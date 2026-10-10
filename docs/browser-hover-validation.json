@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-06T14:10:11.355Z",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": "mouse day preview|no uncaught",
+  "passed": 2,
+  "failed": 0,
+  "results": [
+    {
+      "name": "mouse day preview, Control retention and click selection",
+      "passed": true,
+      "milliseconds": 2003
+    },
+    {
+      "name": "no uncaught browser exceptions or failed asset requests",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": []
+}

@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Scope: This MIT license applies only to original modernization code for which
+the project has licensing rights. Inherited Shouxing astronomical/calendar
+algorithms, data, documentation and illustrations remain subject to the
+original terms in docs/ORIGINAL_NOTICE.md. Third-party materials retain their
+respective licenses; see docs/THIRD_PARTY_NOTICES.md.

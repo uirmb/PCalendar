@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-10-06T15:32:45.744Z",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": null,
+  "scope": "统一地点与时间、日期跟随、专业页刷新、UTC8与跨月显示、桌面和手机",
+  "passed": 13,
+  "failed": 0,
+  "results": [
+    {
+      "name": "one unified entry and Beijing clock independent of the host timezone",
+      "passed": true,
+      "milliseconds": 398,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "fixed UTC offsets synchronize live clock and followed date across both year boundaries",
+      "passed": true,
+      "milliseconds": 1827,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "manual historical selection survives settings changes and clock midnight",
+      "passed": true,
+      "milliseconds": 1381,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "today resumes automatic following and midnight advances the calendar",
+      "passed": true,
+      "milliseconds": 961,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "region mode applies old DST at the actual instant and persists the unified settings",
+      "passed": true,
+      "milliseconds": 1761,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "manual professional dates and the last lunar-phase action survive timezone changes",
+      "passed": true,
+      "milliseconds": 2365,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "theme and week-start preferences leave computed professional result DOM untouched",
+      "passed": true,
+      "milliseconds": 420,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "changing observation coordinates refreshes astronomy while preserving manual input",
+      "passed": true,
+      "milliseconds": 343,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "calendar phase markers and list dates move together across a month boundary",
+      "passed": true,
+      "milliseconds": 911,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "mobile unified panel remains reachable and exposes one consistent time source",
+      "passed": true,
+      "milliseconds": 1023,
+      "verifiedAt": "2026-10-06T15:29:21.870Z"
+    },
+    {
+      "name": "no uncaught exceptions or failed resources in unified-time interactions",
+      "passed": true,
+      "milliseconds": 1,
+      "verifiedAt": "2026-10-06T15:32:45.744Z"
+    },
+    {
+      "name": "ancient calendar terms remain in the day grid, details and copied summary",
+      "passed": true,
+      "milliseconds": 2536,
+      "verifiedAt": "2026-10-06T15:32:45.744Z"
+    },
+    {
+      "name": "DST-day rise and set captions describe regional time without one misleading daily offset",
+      "passed": true,
+      "milliseconds": 662,
+      "verifiedAt": "2026-10-06T15:32:45.744Z"
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": [],
+  "validationStrategy": "先完整执行11组统一时区联动测试并全部通过；随后针对新增的古历节气展示与夏令时日升降标签/复制修复执行2组检查及异常检查，全部通过。本报告合并13组实际成功记录，没有把定向检查记为最后构建的全量复测。",
+  "initialRun": {
+    "timestamp": "2026-10-06T15:29:21.870Z",
+    "passed": 11,
+    "failed": 0
+  },
+  "targetedRun": {
+    "timestamp": "2026-10-06T15:32:45.744Z",
+    "report": "browser-time-edge-validation.json",
+    "passed": 3,
+    "failed": 0
+  }
+}

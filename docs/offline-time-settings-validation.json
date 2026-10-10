@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-10-06T15:32:56.943Z",
+  "browser": "153.0.8010.0",
+  "entry": "dist/sxwnl-modern.html",
+  "protocol": "file:",
+  "checks": [
+    "Single merged entry and selected-zone clock initialize without a server",
+    "Saving UTC-12 synchronizes the clock and followed calendar across the year boundary",
+    "A manually selected historical date and the original 1582 calendar survive a timezone change"
+  ],
+  "pageErrors": [],
+  "httpRequests": [],
+  "passed": true
+}

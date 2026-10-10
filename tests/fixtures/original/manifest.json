@@ -1,0 +1,51 @@
+{
+  "source": "User-provided sxwnl.zip, V5.09 index.htm / indexmp.htm",
+  "encoding": "Converted GB18030 source to UTF-8; test-only originals, excluded from production",
+  "files": [
+    {
+      "file": "tools.js",
+      "sha256": "d04edf3c7705584484b31c02c2059937a5d17e1055ef155ff079ee9b47828e7a",
+      "bytes": 2911
+    },
+    {
+      "file": "eph0.js",
+      "sha256": "1041a49453cc724b0874c07e1a6ef030e297641ed23447e29b0b230c6f95e652",
+      "bytes": 276019
+    },
+    {
+      "file": "ephB.js",
+      "sha256": "0c3fc302225bea1ec588d00292dfd4308dd42709cb668db4167643e87479436b",
+      "bytes": 21583
+    },
+    {
+      "file": "eph.js",
+      "sha256": "49ad01f8440423d2ed513c476919bb42331f4ae27aaf1e8343888272c10dbb8a",
+      "bytes": 61471
+    },
+    {
+      "file": "JW.js",
+      "sha256": "f36b12e1e1b2b5a431b71d5f79bf2dbcc725e789c66b0db032f2e1bacbf4dfbe",
+      "bytes": 57940
+    },
+    {
+      "file": "lunar.js",
+      "sha256": "7b44f7f8dc68f81d4fb5aa45a4725f7226eb8a6ad207572d5d9babd21b8d6304",
+      "bytes": 67088
+    },
+    {
+      "file": "page_gj.js",
+      "sha256": "b3b32092247c8f576e43b072c9cb50f1dae3f15413d28e20c982f462569851c1",
+      "bytes": 6600
+    },
+    {
+      "file": "sm6.htm",
+      "bytes": 7057,
+      "sha256": "016c5c134d6d19ee84873f3aa89c42288d4fb23852e5da615563fe52de52afe3"
+    },
+    {
+      "file": "index.htm",
+      "bytes": 62733,
+      "sha256": "7a7fb9bd42935070386059d9a71eb829da4bd944171789d9d335c1c8368283a1"
+    }
+  ]
+}

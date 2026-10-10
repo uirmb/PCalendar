@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-10-07T03:36:52.194Z",
+  "version": "1.3.0",
+  "browser": "153.0.8010.0",
+  "font": "locally supplied Noto Sans SC for Chinese QA rendering",
+  "errors": [],
+  "failed": [],
+  "shots": [
+    {
+      "name": "desktop-light.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 2068
+    },
+    {
+      "name": "desktop-dark.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 2068
+    },
+    {
+      "name": "place-time-settings.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 2068
+    },
+    {
+      "name": "us-year.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 2309
+    },
+    {
+      "name": "us-christmas.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 2012
+    },
+    {
+      "name": "china-calendar.png",
+      "viewport": 1440,
+      "width": 1440,
+      "height": 1390
+    },
+    {
+      "name": "mobile-light.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 3570
+    },
+    {
+      "name": "us-year-mobile.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 5614
+    },
+    {
+      "name": "place-time-settings-mobile.png",
+      "viewport": 390,
+      "width": 390,
+      "height": 5614
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-10-07T03:38:54.168Z",
+  "version": "1.3.0",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": null,
+  "scope": "纽约日历分层、行政地区隔离、公历年历、季节与DST、专业地点、偏好持久化和手机布局",
+  "passed": 13,
+  "failed": 0,
+  "results": [
+    {
+      "name": "New York selects explicit jurisdiction, localized menus and a local previous-day date",
+      "passed": true,
+      "milliseconds": 2232
+    },
+    {
+      "name": "NYC election, remote school and ASP remain three scoped events with two day labels and overflow",
+      "passed": true,
+      "milliseconds": 1729
+    },
+    {
+      "name": "local calendar toggles persist through reload and can remove optional calendars without removing federal holidays",
+      "passed": true,
+      "milliseconds": 5145
+    },
+    {
+      "name": "Los Angeles with a New York timezone cannot inherit NYC school or parking events",
+      "passed": true,
+      "milliseconds": 803
+    },
+    {
+      "name": "Gregorian year calendar supports filtering, month navigation and switching directly to CN lunar year",
+      "passed": true,
+      "milliseconds": 1820
+    },
+    {
+      "name": "local eclipse default follows the selected city while edited location lists are preserved",
+      "passed": true,
+      "milliseconds": 866
+    },
+    {
+      "name": "US season computation coexists with moon phases and retains each country mode",
+      "passed": true,
+      "milliseconds": 1223
+    },
+    {
+      "name": "daily clocks, copied dates and zodiac follow explicit preferences while elapsed durations stay unchanged",
+      "passed": true,
+      "milliseconds": 1255
+    },
+    {
+      "name": "DST and season events appear on local dates and fixed offset mode removes clock-change reminders",
+      "passed": true,
+      "milliseconds": 1231
+    },
+    {
+      "name": "uncovered NYC years are visibly identified rather than extrapolating school and parking dates",
+      "passed": true,
+      "milliseconds": 507
+    },
+    {
+      "name": "opening old custom US settings cannot silently assign NYC when only display preferences change",
+      "passed": true,
+      "milliseconds": 6334
+    },
+    {
+      "name": "NYC month, year and settings remain usable at 390px with no document overflow",
+      "passed": true,
+      "milliseconds": 2211
+    },
+    {
+      "name": "NYC interactions have no uncaught exceptions or failed resources",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": []
+}

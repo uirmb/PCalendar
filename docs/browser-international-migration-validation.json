@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-10-06T16:25:21.833Z",
+  "version": "1.2.0",
+  "browser": "Chromium",
+  "browserVersion": "153.0.8010.0",
+  "build": "dist",
+  "filter": "legacy region|no uncaught",
+  "scope": "国际地区、CN/US节日、现代IANA、显示隔离、专业动作恢复、桌面和手机",
+  "passed": 2,
+  "failed": 0,
+  "results": [
+    {
+      "name": "legacy region and unknown custom-location migration produce coherent visible country and coordinates",
+      "passed": true,
+      "milliseconds": 2480
+    },
+    {
+      "name": "no uncaught exceptions or failed resources in international interactions",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "pageErrors": [],
+  "failedRequests": []
+}
