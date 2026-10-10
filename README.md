@@ -1,5 +1,7 @@
 # PCalendar
 
+**在线主页：** [打开 PCalendar](https://uirmb.github.io/PCalendar/)（首次使用需在仓库 Settings → Pages 中选择 main /docs 并保存）。
+
 **PCalendar 是由寿星万年历（寿星天文历 V5.09）改造而来的现代日历与天文计算项目，仓库初始导入版本为 v1.4.0。** 原作作者为许剑伟；本项目保留原历法、天文算法与数据来源，在此基础上进行 TypeScript 模块化、界面现代化、多语言与多国家/地区日历扩展。
 
 ## v1.4.0 概览
@@ -261,3 +263,7 @@ const riseSet = getSunMoon(day.d0 + 2451545, 121.4737, 31.2304, 8);
 ## 初始导入验证
 
 本次 v1.4.0 导入的类型检查和构建通过；95 项测试中 92 项通过、3 项失败。保留原版本功能代码，具体记录见 [导入验证](docs/IMPORT_V1.4.0.md)。
+
+## GitHub Pages 首页
+
+`docs/index.html` 是 v1.4.0 的完整离线单页，脚本与样式内联，可作为网站首页。打开仓库 Settings → Pages，将 Source 设置为 Deploy from a branch，Branch 选择 main，目录选择 /docs，保存后访问 https://uirmb.github.io/PCalendar/ 。
